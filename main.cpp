@@ -29,7 +29,7 @@ float ChoiñePizza(float total_cost) {
 				std::cout << "ÎØÈÁÊÀ\n";
 				break;
 			}
-			else if (choice == 0)
+			else if (choice == 0 || pizza_counter % 5 == 0)
 			{
 				break;
 			}
