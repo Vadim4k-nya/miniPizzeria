@@ -4,8 +4,8 @@
 float ChoiñePizza(float total_cost) {
 	int choice{};
 
-	const int pizza_types = 7;
-	int pizza_prise[pizza_types]{100, 299, 249, 159, 299, 149, 399};
+	const int pizza_types = 8;
+	int pizza_prise[pizza_types]{100, 299, 249, 159, 299, 149, 399, 199};
 
 	int pizza_counter{};
 
@@ -17,6 +17,7 @@ float ChoiñePizza(float total_cost) {
 			<< "\n5. Ãàâàéñêàÿ (" << pizza_prise[4] << "ð.)"
 			<< "\n6. Àññîðòè (" << pizza_prise[5] << "ð.)"
 			<< "\n7. Ìîðñêàÿ (" << pizza_prise[6] << "ð.)"
+			<< "\n8. Âåò÷èíà è ñûð (" << pizza_prise[7] << "ð.)"
 			<< "\n\n0. Çàêîí÷èòü âûáîð\n ?> ";
 		std::cin >> choice;
 
@@ -92,8 +93,8 @@ float ChoiñeSnack(float total_cost) {
 float ChoiñeDrink(float total_cost) {
 	int choice{};
 
-	const int drink_types = 5;
-	int drink_prise[drink_types]{100, 199, 149, 249, 139};
+	const int drink_types = 6;
+	int drink_prise[drink_types]{100, 199, 149, 249, 139, 349};
 
 	int drink_counter{};
 
@@ -103,6 +104,7 @@ float ChoiñeDrink(float total_cost) {
 			<< "\n3. Êîëà (" << drink_prise[2] << "ð.)"
 			<< "\n4. ×àé ÷¸ðíûé (" << drink_prise[3] << "ð.)"
 			<< "\n5. Êàêàî (" << drink_prise[4] << "ð.)"
+			<< "\n6. Ìèëêøåéê (" << drink_prise[5] << "ð.)"
 			<< "\n\n0. Çàêîí÷èòü âûáîð\n ?> ";
 		std::cin >> choice;
 		
