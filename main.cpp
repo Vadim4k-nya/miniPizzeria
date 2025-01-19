@@ -36,15 +36,14 @@ float ChoiñePizza(float total_cost) {
 			}
 			else if (choice == i) 
 			{
-				system("cls");
-				std::cout << "Ñóììà: " << total_cost << " + " << pizza_prise[i-1] << " = " << total_cost + pizza_prise[i-1] << std::endl;
+				std::cout << "\nÑóììà: " << total_cost << " + " << pizza_prise[i-1] << " = " << total_cost + pizza_prise[i-1] << std::endl;
 				total_cost += pizza_prise[i-1];
 				break;
 			}
 		}
-	
+		system("pause");
+		system("cls");
 	} while (choice != 0);
-	
 	return total_cost;
 }
 
@@ -84,9 +83,9 @@ float ChoiñeSnack(float total_cost) {
 			}
 
 		}
-		
+		system("pause");
+		system("cls");
 	} while (choice != 0);
-
 	return total_cost;
 }
 
@@ -128,9 +127,9 @@ float ChoiñeDrink(float total_cost) {
 			}
 			
 		}
-
+		system("pause");
+		system("cls");
 	} while (choice != 0);
-	
 	return total_cost;
 }
 
@@ -149,9 +148,15 @@ int main()
 
 		total_cost = pizza_amount + snack_amount + drink_amount;
 
+		if (total_cost > 5000)
+		{
+			total_cost = total_cost / 100 * 15;
+		}
+
 
 		std::cout << "Òîòàëüíàÿ öåíà çàêàçà: " << total_cost << "ð. \n";
 		system("pause");
+		system("cls");
 	}
 
 
